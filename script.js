@@ -1,11 +1,13 @@
+alert("Race planner loaded");
+
+
 function generateTimeline(){
 
-    let raceTime =
-    document.getElementById("raceTime").value;
+    let raceTime = document.getElementById("raceTime").value;
 
 
     if (!raceTime) {
-        alert("Please enter race time");
+        alert("Please enter race start time");
         return;
     }
 
@@ -80,24 +82,26 @@ function generateTimeline(){
         );
 
 
-        output +=
-        `
+        let formattedTime = eventTime.toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit"
+        });
+
+
+        output += `
+        
         <div class="plan-item">
 
             <h3>
-            ${event.label}
-            —
-            ${eventTime.toLocaleTimeString([], {
-                hour: "2-digit",
-                minute: "2-digit"
-            })}
+                ${event.label} — ${formattedTime}
             </h3>
 
             <p>
-            ${event.name}
+                ${event.name}
             </p>
 
         </div>
+
         `;
 
     });
