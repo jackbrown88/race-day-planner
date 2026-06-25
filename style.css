@@ -29,19 +29,19 @@ body {
 }
 
 
-/* Calculator */
+/* Race time selector area */
 
 .calculator {
 
     position: absolute;
 
-    top: 80px;
+    top: 245px;
 
     left: 50%;
 
     transform: translateX(-50%);
 
-    z-index: 10;
+    z-index: 20;
 
     text-align: center;
 
@@ -52,46 +52,56 @@ body {
 }
 
 
+/* Hide old title */
+
 .calculator h1 {
 
-    font-size: 40px;
-
-    margin-bottom: 25px;
+    display: none;
 
 }
 
+
+/* Select race time label */
 
 label {
 
     display: block;
 
-    font-size: 20px;
+    font-size: 16px;
 
-    margin-bottom: 10px;
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: white;
 
 }
 
 
+/* Time selector */
+
 input[type="time"] {
 
-    padding: 12px;
+    padding: 8px 12px;
 
-    font-size: 18px;
+    font-size: 16px;
 
     border-radius: 8px;
 
     border: none;
 
-    margin-bottom: 15px;
+    width: 140px;
 
 }
 
 
+/* Generate button */
+
 button {
 
-    padding: 12px 25px;
+    padding: 8px 16px;
 
-    font-size: 18px;
+    font-size: 16px;
 
     border-radius: 8px;
 
@@ -99,10 +109,12 @@ button {
 
     cursor: pointer;
 
+    margin-left: 8px;
+
 }
 
 
-/* Generated race times */
+/* Calculated race times */
 
 .race-time {
 
@@ -112,103 +124,106 @@ button {
 
     color: white;
 
-    font-size: 28px;
+    font-size: 22px;
 
     font-weight: bold;
 
     font-family: Arial, Helvetica, sans-serif;
 
+    width: 110px;
+
+    text-align: center;
+
 }
 
 
-/* MY TIME column positions */
-/* adjust these if needed */
+/* MY TIME column */
 
 #time-t4 {
 
-    top: 300px;
+    top: 340px;
 
-    left: 760px;
+    left: 125px;
 
 }
 
 
 #time-t3 {
 
-    top: 360px;
+    top: 420px;
 
-    left: 760px;
+    left: 125px;
 
 }
 
 
 #time-t1 {
 
-    top: 420px;
+    top: 500px;
 
-    left: 760px;
+    left: 125px;
 
 }
 
 
 #time-t45 {
 
-    top: 480px;
+    top: 580px;
 
-    left: 760px;
+    left: 125px;
 
 }
 
 
 #time-t40 {
 
-    top: 540px;
+    top: 660px;
 
-    left: 760px;
+    left: 125px;
 
 }
 
 
 #time-t30 {
 
-    top: 600px;
+    top: 740px;
 
-    left: 760px;
+    left: 125px;
 
 }
 
 
 #time-t15 {
 
-    top: 660px;
+    top: 820px;
 
-    left: 760px;
+    left: 125px;
 
 }
 
 
 #time-t10 {
 
-    top: 720px;
+    top: 900px;
 
-    left: 760px;
+    left: 125px;
 
 }
 
 
 #time-t5 {
 
-    top: 780px;
+    top: 980px;
 
-    left: 760px;
+    left: 125px;
 
 }
 
 
 #time-t0 {
 
-    top: 840px;
+    top: 1060px;
 
-    left: 760px;
+    left: 125px;
 
 }
