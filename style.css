@@ -29,13 +29,13 @@ body {
 }
 
 
-/* Controls in top-left area */
+/* Controls */
 
 .calculator {
 
     position: absolute;
 
-    top: 137px;
+    top: 145px;
 
     left: 15px;
 
@@ -48,16 +48,7 @@ body {
 }
 
 
-/* Hide old title completely */
-
-.calculator h1 {
-
-    display: none;
-
-}
-
-
-/* Select race time */
+/* Select race time label */
 
 label {
 
@@ -91,7 +82,7 @@ input[type="time"] {
 }
 
 
-/* Button */
+/* Generate button */
 
 button {
 
@@ -110,7 +101,7 @@ button {
 }
 
 
-/* Calculated times */
+/* Calculated race times */
 
 .race-time {
 
@@ -120,24 +111,29 @@ button {
 
     color: white;
 
-    font-size: 22px;
+    font-family: 'Bebas Neue', sans-serif;
 
-    font-weight: bold;
+    font-size: 48px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 
-    width: 100px;
+    letter-spacing: 1px;
+
+    width: 120px;
 
     text-align: center;
+
+    text-shadow:
+        0 0 4px rgba(255,255,255,0.4);
 
 }
 
 
-/* MY TIME column */
+/* MY TIME column positions */
 
 #time-t4 {
 
-    top: 330px;
+    top: 328px;
 
     left: 125px;
 
@@ -146,7 +142,7 @@ button {
 
 #time-t3 {
 
-    top: 410px;
+    top: 408px;
 
     left: 125px;
 
@@ -155,7 +151,7 @@ button {
 
 #time-t1 {
 
-    top: 490px;
+    top: 488px;
 
     left: 125px;
 
@@ -164,7 +160,7 @@ button {
 
 #time-t45 {
 
-    top: 570px;
+    top: 568px;
 
     left: 125px;
 
@@ -173,7 +169,7 @@ button {
 
 #time-t40 {
 
-    top: 650px;
+    top: 648px;
 
     left: 125px;
 
@@ -182,7 +178,7 @@ button {
 
 #time-t30 {
 
-    top: 730px;
+    top: 728px;
 
     left: 125px;
 
@@ -191,7 +187,7 @@ button {
 
 #time-t15 {
 
-    top: 810px;
+    top: 808px;
 
     left: 125px;
 
@@ -200,7 +196,7 @@ button {
 
 #time-t10 {
 
-    top: 890px;
+    top: 888px;
 
     left: 125px;
 
@@ -209,7 +205,7 @@ button {
 
 #time-t5 {
 
-    top: 970px;
+    top: 968px;
 
     left: 125px;
 
@@ -218,7 +214,7 @@ button {
 
 #time-t0 {
 
-    top: 1050px;
+    top: 1048px;
 
     left: 125px;
 
