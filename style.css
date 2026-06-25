@@ -1,15 +1,214 @@
-output += `
+body {
 
-<div class="plan-item">
+    margin: 0;
 
-    <h3>
-        ${formattedTime}
-    </h3>
+    background: #000;
 
-    <p>
-        ${event.name}
-    </p>
+    display: flex;
 
-</div>
+    justify-content: center;
 
-`;
+}
+
+
+.planner {
+
+    position: relative;
+
+    width: 1080px;
+
+}
+
+
+#background {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+
+/* Calculator */
+
+.calculator {
+
+    position: absolute;
+
+    top: 80px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 10;
+
+    text-align: center;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.calculator h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 25px;
+
+}
+
+
+label {
+
+    display: block;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+}
+
+
+input[type="time"] {
+
+    padding: 12px;
+
+    font-size: 18px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    margin-bottom: 15px;
+
+}
+
+
+button {
+
+    padding: 12px 25px;
+
+    font-size: 18px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+/* Generated race times */
+
+.race-time {
+
+    position: absolute;
+
+    z-index: 20;
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* MY TIME column positions */
+/* adjust these if needed */
+
+#time-t4 {
+
+    top: 300px;
+
+    left: 760px;
+
+}
+
+
+#time-t3 {
+
+    top: 360px;
+
+    left: 760px;
+
+}
+
+
+#time-t1 {
+
+    top: 420px;
+
+    left: 760px;
+
+}
+
+
+#time-t45 {
+
+    top: 480px;
+
+    left: 760px;
+
+}
+
+
+#time-t40 {
+
+    top: 540px;
+
+    left: 760px;
+
+}
+
+
+#time-t30 {
+
+    top: 600px;
+
+    left: 760px;
+
+}
+
+
+#time-t15 {
+
+    top: 660px;
+
+    left: 760px;
+
+}
+
+
+#time-t10 {
+
+    top: 720px;
+
+    left: 760px;
+
+}
+
+
+#time-t5 {
+
+    top: 780px;
+
+    left: 760px;
+
+}
+
+
+#time-t0 {
+
+    top: 840px;
+
+    left: 760px;
+
+}
