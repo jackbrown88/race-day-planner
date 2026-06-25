@@ -126,7 +126,7 @@ button {
 
     font-family: 'Bebas Neue', sans-serif;
 
-    font-size: clamp(28px, 5vw, 48px);
+    font-size: 16;
 
     font-weight: 400;
 
