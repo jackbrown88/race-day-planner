@@ -1,269 +1,126 @@
-body {
-
+/* ── Reset & base ── */
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
 
-    background: #000;
-
+body {
+    background: #0D0D0D;
     display: flex;
-
     justify-content: center;
-
+    align-items: flex-start;
+    min-height: 100vh;
     overflow-x: hidden;
-
 }
 
-
-/* Main planner container */
-
+/* ── Planner container ──
+   Always 4:5 aspect ratio (1080×1350).
+   Fills full viewport width on mobile, capped at 1080px on desktop. */
 .planner {
-
     position: relative;
-
     width: min(100vw, 1080px);
-
+    aspect-ratio: 1080 / 1350;
 }
 
-
-/* Background image */
-
+/* ── Background PNG fills container exactly ── */
 #background {
-
-    width: 100%;
-
-    height: auto;
-
-    display: block;
-
-}
-
-
-
-/* Controls */
-
-.calculator {
-
     position: absolute;
-
-    top: 13.5%;
-
-    left: 2%;
-
-    z-index: 20;
-
-    color: white;
-
-    font-family: Arial, Helvetica, sans-serif;
-
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: fill; /* stretch to match container — no letterboxing */
 }
 
-
-
-/* Label */
+/* ── Input UI ── */
+.calculator {
+    position: absolute;
+    top: 11%;
+    left: 3%;
+    z-index: 20;
+}
 
 label {
-
     display: block;
-
-    font-size: clamp(10px, 1.5vw, 14px);
-
-    font-weight: bold;
-
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(11px, 2vw, 16px);
+    letter-spacing: 1px;
+    color: #C8F000;
     margin-bottom: 4px;
-
-    color: white;
-
 }
 
-
-
-/* Time selector */
+.input-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
 
 input[type="time"] {
-
-    width: clamp(80px, 12vw, 120px);
-
-    padding: 5px;
-
-    font-size: clamp(10px, 1.5vw, 14px);
-
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(12px, 2.2vw, 18px);
+    background: #1A1A1A;
+    color: #C8F000;
+    border: 1px solid #C8F000;
     border-radius: 4px;
-
-    border: none;
-
+    padding: clamp(3px, 0.6vw, 6px) clamp(5px, 0.9vw, 10px);
+    width: clamp(90px, 14vw, 130px);
+    /* Remove default time picker chrome on some browsers */
+    -webkit-appearance: none;
+    appearance: none;
 }
 
-
-
-/* Button */
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(80%) sepia(100%) saturate(500%) hue-rotate(30deg);
+    cursor: pointer;
+}
 
 button {
-
-    padding: 5px 10px;
-
-    font-size: clamp(10px, 1.5vw, 14px);
-
-    border-radius: 4px;
-
-    border: none;
-
-    cursor: pointer;
-
-    margin-left: 4px;
-
-}
-
-
-
-/* Race time text */
-
-.race-time {
-
-    position: absolute;
-
-    z-index: 20;
-
-    color: #cddc03;
-
     font-family: 'Bebas Neue', sans-serif;
-
-    font-size: 20;
-
-    font-weight: 400;
-
+    font-size: clamp(12px, 2.2vw, 18px);
     letter-spacing: 1px;
+    background: #C8F000;
+    color: #0D0D0D;
+    border: none;
+    border-radius: 4px;
+    padding: clamp(3px, 0.6vw, 6px) clamp(8px, 1.5vw, 16px);
+    cursor: pointer;
+    transition: background 0.15s;
+}
 
-    width: 12%;
+button:hover {
+    background: #d8ff10;
+}
 
+button:active {
+    background: #a8cc00;
+}
+
+/* ── Time overlays ──
+   Each div sits in the MY TIME column.
+   left/top are % of container — scale perfectly on all screen sizes. */
+.race-time {
+    position: absolute;
+    z-index: 20;
+    color: #C8F000;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(10px, 3.2vw, 34px);
+    letter-spacing: 1px;
+    width: 13%;
     text-align: center;
-
-    text-shadow:
-
-        0 0 8px #00ff66;
-
+    /* Vertically centre text within its row */
+    transform: translateY(-50%);
+    text-shadow: 0 0 6px rgba(200, 240, 0, 0.4);
 }
 
-
-
-/* Timeline positions */
-
-
-#time-t4 {
-
-    top: 30.4%;
-
-    left: 10.5%;
-
-}
-
-
-#time-t3 {
-
-    top: 37.8%;
-
-    left: 11.5%;
-
-}
-
-
-#time-t1 {
-
-    top: 45.2%;
-
-    left: 11.5%;
-
-}
-
-
-#time-t45 {
-
-    top: 52.6%;
-
-    left: 11.5%;
-
-}
-
-
-#time-t40 {
-
-    top: 60%;
-
-    left: 11.5%;
-
-}
-
-
-#time-t30 {
-
-    top: 67.4%;
-
-    left: 11.5%;
-
-}
-
-
-#time-t15 {
-
-    top: 74.8%;
-
-    left: 11.5%;
-
-}
-
-
-#time-t10 {
-
-    top: 82.2%;
-
-    left: 11.5%;
-
-}
-
-
-#time-t5 {
-
-    top: 89.6%;
-
-    left: 11.5%;
-
-}
-
-
-#time-t0 {
-
-    top: 97%;
-
-    left: 11.5%;
-
-}
-
-
-
-/* Small phone adjustments */
-
-@media (max-width: 500px) {
-
-
-    .calculator {
-
-        top: 10%;
-
-    }
-
-
-    .race-time {
-
-        font-size: 8vw;
-
-    }
-
-
-    button {
-
-        margin-top: 5px;
-
-        margin-left: 0;
-
-    }
-
-
-}
+/* Row positions — top % is the vertical midpoint of each row in the PNG */
+#time-t4  { top: 30.5%; left: 10%; }
+#time-t3  { top: 38%;   left: 10%; }
+#time-t1  { top: 45.4%; left: 10%; }
+#time-t45 { top: 52.8%; left: 10%; }
+#time-t40 { top: 60.2%; left: 10%; }
+#time-t30 { top: 67.6%; left: 10%; }
+#time-t15 { top: 75%;   left: 10%; }
+#time-t10 { top: 82.4%; left: 10%; }
+#time-t5  { top: 89.8%; left: 10%; }
+#time-t0  { top: 97%;   left: 10%; }
