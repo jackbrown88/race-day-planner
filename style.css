@@ -115,12 +115,12 @@ button:active {
 
 /* Row positions — top % is the vertical midpoint of each row in the PNG */
 #time-t4  { top: 30.5%; left: 14%; }
-#time-t3  { top: 38%;   left: 13%; }
-#time-t1  { top: 45.4%; left: 10%; }
-#time-t45 { top: 52.8%; left: 10%; }
-#time-t40 { top: 60.2%; left: 10%; }
-#time-t30 { top: 67.6%; left: 10%; }
-#time-t15 { top: 75%;   left: 10%; }
-#time-t10 { top: 82.4%; left: 10%; }
-#time-t5  { top: 89.8%; left: 10%; }
-#time-t0  { top: 97%;   left: 10%; }
+#time-t3  { top: 38%;   left: 14%; }
+#time-t1  { top: 45.4%; left: 14%; }
+#time-t45 { top: 52.8%; left: 14%; }
+#time-t40 { top: 60.2%; left: 14%; }
+#time-t30 { top: 67.6%; left: 14%; }
+#time-t15 { top: 75%;   left: 14%; }
+#time-t10 { top: 82.4%; left: 14%; }
+#time-t5  { top: 89.8%; left: 14%; }
+#time-t0  { top: 97%;   left: 14%; }
