@@ -29,21 +29,17 @@ body {
 }
 
 
-/* Race time selector area */
+/* Controls in top-left area */
 
 .calculator {
 
     position: absolute;
 
-    top: 200px;
+    top: 195px;
 
-    left: 30%;
-
-    transform: translateX(-50%);
+    left: 15px;
 
     z-index: 20;
-
-    text-align: center;
 
     color: white;
 
@@ -52,7 +48,7 @@ body {
 }
 
 
-/* Hide old title */
+/* Hide old title completely */
 
 .calculator h1 {
 
@@ -61,7 +57,7 @@ body {
 }
 
 
-/* Select race time label */
+/* Select race time */
 
 label {
 
@@ -71,7 +67,7 @@ label {
 
     font-weight: bold;
 
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 
     color: white;
 
@@ -82,39 +78,39 @@ label {
 
 input[type="time"] {
 
-    padding: 8px 12px;
+    width: 95px;
+
+    padding: 4px 6px;
 
     font-size: 12px;
 
-    border-radius: 8px;
+    border-radius: 4px;
 
     border: none;
-
-    width: 140px;
 
 }
 
 
-/* Generate button */
+/* Button */
 
 button {
 
-    padding: 8px 16px;
+    padding: 4px 8px;
 
     font-size: 12px;
 
-    border-radius: 8px;
+    border-radius: 4px;
 
     border: none;
 
     cursor: pointer;
 
-    margin-left: 8px;
+    margin-left: 4px;
 
 }
 
 
-/* Calculated race times */
+/* Calculated times */
 
 .race-time {
 
@@ -130,7 +126,7 @@ button {
 
     font-family: Arial, Helvetica, sans-serif;
 
-    width: 110px;
+    width: 100px;
 
     text-align: center;
 
@@ -141,7 +137,7 @@ button {
 
 #time-t4 {
 
-    top: 340px;
+    top: 330px;
 
     left: 125px;
 
@@ -150,7 +146,7 @@ button {
 
 #time-t3 {
 
-    top: 420px;
+    top: 410px;
 
     left: 125px;
 
@@ -159,7 +155,7 @@ button {
 
 #time-t1 {
 
-    top: 500px;
+    top: 490px;
 
     left: 125px;
 
@@ -168,7 +164,7 @@ button {
 
 #time-t45 {
 
-    top: 580px;
+    top: 570px;
 
     left: 125px;
 
@@ -177,7 +173,7 @@ button {
 
 #time-t40 {
 
-    top: 660px;
+    top: 650px;
 
     left: 125px;
 
@@ -186,7 +182,7 @@ button {
 
 #time-t30 {
 
-    top: 740px;
+    top: 730px;
 
     left: 125px;
 
@@ -195,7 +191,7 @@ button {
 
 #time-t15 {
 
-    top: 820px;
+    top: 810px;
 
     left: 125px;
 
@@ -204,7 +200,7 @@ button {
 
 #time-t10 {
 
-    top: 900px;
+    top: 890px;
 
     left: 125px;
 
@@ -213,7 +209,7 @@ button {
 
 #time-t5 {
 
-    top: 980px;
+    top: 970px;
 
     left: 125px;
 
@@ -222,7 +218,7 @@ button {
 
 #time-t0 {
 
-    top: 1060px;
+    top: 1050px;
 
     left: 125px;
 
