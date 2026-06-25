@@ -1,65 +1,33 @@
-console.log("Race planner JS loaded");
-
-
 function generateTimeline() {
+    const raceTimeValue = document.getElementById("raceTime").value;
 
-    let raceTime = document.getElementById("raceTime").value;
-
-    if (!raceTime) {
-
-        alert("Please enter race start time");
-
+    if (!raceTimeValue) {
+        alert("Please enter your race start time.");
         return;
-
     }
 
-    let raceStart = new Date(
-        "2026-01-01T" + raceTime
-    );
+    const raceStart = new Date("2000-01-01T" + raceTimeValue);
 
-
-    function calculateTime(offset) {
-
-        let eventTime = new Date(
-            raceStart.getTime() + (offset * 60000)
-        );
-
-        return eventTime.toLocaleTimeString([], {
-            hour: "2-digit",
-            minute: "2-digit"
-        });
-
+    function timeAt(offsetMinutes) {
+        const t = new Date(raceStart.getTime() + offsetMinutes * 60000);
+        return t.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
     }
 
-
-    document.getElementById("time-t4").innerHTML =
-        calculateTime(-240);
-
-    document.getElementById("time-t3").innerHTML =
-        calculateTime(-180);
-
-    document.getElementById("time-t1").innerHTML =
-        calculateTime(-60);
-
-    document.getElementById("time-t45").innerHTML =
-        calculateTime(-45);
-
-    document.getElementById("time-t40").innerHTML =
-        calculateTime(-40);
-
-    document.getElementById("time-t30").innerHTML =
-        calculateTime(-30);
-
-    document.getElementById("time-t15").innerHTML =
-        calculateTime(-15);
-
-    document.getElementById("time-t10").innerHTML =
-        calculateTime(-10);
-
-    document.getElementById("time-t5").innerHTML =
-        calculateTime(-5);
-
-    document.getElementById("time-t0").innerHTML =
-        calculateTime(0);
-
+    document.getElementById("time-t4").textContent  = timeAt(-240);
+    document.getElementById("time-t3").textContent  = timeAt(-180);
+    document.getElementById("time-t1").textContent  = timeAt(-60);
+    document.getElementById("time-t45").textContent = timeAt(-45);
+    document.getElementById("time-t40").textContent = timeAt(-40);
+    document.getElementById("time-t30").textContent = timeAt(-30);
+    document.getElementById("time-t15").textContent = timeAt(-15);
+    document.getElementById("time-t10").textContent = timeAt(-10);
+    document.getElementById("time-t5").textContent  = timeAt(-5);
+    document.getElementById("time-t0").textContent  = timeAt(0);
 }
+
+// Allow Enter key to trigger
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("raceTime").addEventListener("keydown", function (e) {
+        if (e.key === "Enter") generateTimeline();
+    });
+});
