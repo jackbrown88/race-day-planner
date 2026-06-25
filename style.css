@@ -114,7 +114,7 @@ button:active {
 }
 
 /* Row positions — top % is the vertical midpoint of each row in the PNG */
-#time-t4  { top: 30.5%; left: 10%; }
+#time-t4  { top: 30.5%; left: 15%; }
 #time-t3  { top: 38%;   left: 10%; }
 #time-t1  { top: 45.4%; left: 10%; }
 #time-t45 { top: 52.8%; left: 10%; }
