@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* ── Planner container ──
@@ -36,7 +36,7 @@ body {
 /* ── Input UI ── */
 .calculator {
     position: absolute;
-    top: 19%;
+    top: 16%;
     left: 3%;
     z-index: 20;
 }
