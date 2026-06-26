@@ -7,36 +7,36 @@
 
 body {
     background: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
 /* ── Planner container ──
-   Fills full viewport on all devices.
-   On desktop capped at 1080px wide, centred. */
+   Always 4:5 aspect ratio (1080×1350).
+   Fills full viewport width on mobile, capped at 1080px on desktop. */
 .planner {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    max-width: 1080px;
-    margin: 0 auto;
-    overflow: hidden;
+    width: min(100vw, 1080px);
+    aspect-ratio: 1080 / 1350;
 }
 
-/* ── Background PNG covers the container ── */
+/* ── Background PNG fills container exactly ── */
 #background {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover;
-    object-position: top center;
+    object-fit: fill;
 }
 
-/* ── Input UI — above the table, left aligned ── */
+/* ── Input UI ── */
 .calculator {
     position: absolute;
-    top: 26%;
+    top: 16%;
     left: 3%;
     z-index: 20;
 }
@@ -44,7 +44,7 @@ body {
 label {
     display: block;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(11px, 3vw, 16px);
+    font-size: clamp(11px, 2vw, 16px);
     letter-spacing: 1px;
     color: #C8F000;
     margin-bottom: 4px;
@@ -58,13 +58,13 @@ label {
 
 input[type="time"] {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(12px, 3.2vw, 18px);
+    font-size: clamp(12px, 2.2vw, 18px);
     background: #1A1A1A;
     color: #C8F000;
     border: 1px solid #C8F000;
     border-radius: 4px;
-    padding: clamp(3px, 0.8vw, 6px) clamp(5px, 1vw, 10px);
-    width: clamp(90px, 20vw, 130px);
+    padding: clamp(3px, 0.6vw, 6px) clamp(5px, 0.9vw, 10px);
+    width: clamp(90px, 14vw, 130px);
     -webkit-appearance: none;
     appearance: none;
 }
@@ -76,13 +76,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 button {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(12px, 3.2vw, 18px);
+    font-size: clamp(12px, 2.2vw, 18px);
     letter-spacing: 1px;
     background: #C8F000;
     color: #0D0D0D;
     border: none;
     border-radius: 4px;
-    padding: clamp(3px, 0.8vw, 6px) clamp(8px, 2vw, 16px);
+    padding: clamp(3px, 0.6vw, 6px) clamp(8px, 1.5vw, 16px);
     cursor: pointer;
     transition: background 0.15s;
 }
@@ -96,7 +96,7 @@ button:active { background: #a8cc00; }
     z-index: 20;
     color: #C8F000;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(10px, 3.8vw, 40px);
+    font-size: clamp(10px, 3.2vw, 34px);
     letter-spacing: 1px;
     width: 13%;
     text-align: center;
@@ -104,7 +104,7 @@ button:active { background: #a8cc00; }
     text-shadow: 0 0 6px rgba(200, 240, 0, 0.4);
 }
 
-/* Row positions — % of 1350px image height */
+/* Row positions — precise Y coordinates from Canva (÷ 1350) */
 #time-t4  { top: 32.06%; left: 10%; }
 #time-t3  { top: 38.54%; left: 10%; }
 #time-t1  { top: 45.21%; left: 10%; }
