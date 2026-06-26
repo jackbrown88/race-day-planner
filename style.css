@@ -101,8 +101,8 @@ button:active { background: #a8cc00; }
 }
 
 /* Row positions — precise Y coordinates from Canva (÷ 1350) */
-#time-t4  { top: 32.06%; left: 13.5%; }
-#time-t3  { top: 38.54%; left: 13.5%; }
+#time-t4  { top: 31.06%; left: 13.5%; }
+#time-t3  { top: 36.54%; left: 13.5%; }
 #time-t1  { top: 45.21%; left: 13.5%; }
 #time-t45 { top: 51.82%; left: 13.5%; }
 #time-t40 { top: 58.50%; left: 13.5%; }
