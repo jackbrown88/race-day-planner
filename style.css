@@ -113,14 +113,14 @@ button:active {
     text-shadow: 0 0 6px rgba(200, 240, 0, 0.4);
 }
 
-/* Row positions — top % is the vertical midpoint of each row in the PNG */
-#time-t4  { top: 32.5%; left: 13.5%; }
-#time-t3  { top: 38%;   left: 13.5%; }
-#time-t1  { top: 45.4%; left: 13.5%; }
-#time-t45 { top: 52.8%; left: 13.5%; }
-#time-t40 { top: 60.2%; left: 13.5%; }
-#time-t30 { top: 67.6%; left: 13.5%; }
-#time-t15 { top: 75%;   left: 13.5%; }
-#time-t10 { top: 82.4%; left: 13.5%; }
-#time-t5  { top: 89.8%; left: 13.5%; }
-#time-t0  { top: 97%;   left: 13.5%; }
+/* Row positions — precise Y coordinates from Canva (÷ 1350) */
+#time-t4  { top: 32.76%; left: 13.5%; }
+#time-t3  { top: 39.24%; left: 13.5%; }
+#time-t1  { top: 45.91%; left: 13.5%; }
+#time-t45 { top: 52.52%; left: 13.5%; }
+#time-t40 { top: 59.20%; left: 13.5%; }
+#time-t30 { top: 65.78%; left: 13.5%; }
+#time-t15 { top: 72.33%; left: 13.5%; }
+#time-t10 { top: 78.98%; left: 13.5%; }
+#time-t5  { top: 85.55%; left: 13.5%; }
+#time-t0  { top: 92.47%; left: 13.5%; }
