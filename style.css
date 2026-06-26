@@ -104,7 +104,7 @@ button:active {
     z-index: 20;
     color: #C8F000;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(10px, 3.2vw, 34px);
+    font-size: clamp(10px, 3.8vw, 40px);
     letter-spacing: 1px;
     width: 13%;
     text-align: center;
