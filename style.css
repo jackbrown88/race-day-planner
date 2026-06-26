@@ -96,7 +96,7 @@ button:active { background: #a8cc00; }
     z-index: 20;
     color: #C8F000;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(10px, 3.2vw, 34px);
+    font-size: clamp(10px, 3.8vw, 40px);
     letter-spacing: 1px;
     width: 13%;
     text-align: center;
@@ -105,13 +105,13 @@ button:active { background: #a8cc00; }
 }
 
 /* Row positions — precise Y coordinates from Canva (÷ 1350) */
-#time-t4  { top: 32.06%; left: 10%; }
-#time-t3  { top: 38.54%; left: 10%; }
-#time-t1  { top: 45.21%; left: 10%; }
-#time-t45 { top: 51.82%; left: 10%; }
-#time-t40 { top: 58.50%; left: 10%; }
-#time-t30 { top: 65.08%; left: 10%; }
-#time-t15 { top: 71.63%; left: 10%; }
-#time-t10 { top: 78.28%; left: 10%; }
-#time-t5  { top: 84.85%; left: 10%; }
-#time-t0  { top: 91.77%; left: 10%; }
+#time-t4  { top: 32.06%; left: 13.5%; }
+#time-t3  { top: 38.54%; left: 13.5%; }
+#time-t1  { top: 45.21%; left: 13.5%; }
+#time-t45 { top: 51.82%; left: 13.5%; }
+#time-t40 { top: 58.50%; left: 13.5%; }
+#time-t30 { top: 65.08%; left: 13.5%; }
+#time-t15 { top: 71.63%; left: 13.5%; }
+#time-t10 { top: 78.28%; left: 13.5%; }
+#time-t5  { top: 84.85%; left: 13.5%; }
+#time-t0  { top: 91.77%; left: 13.5%; }
