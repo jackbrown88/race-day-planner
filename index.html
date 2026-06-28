@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zwift Race Day Timeline | Jack Brown Endurance</title>
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:title" content="Zwift Race Day Timeline">
+    <meta property="og:description" content="Enter your race start time and get your personalised countdown to peak performance.">
+    <meta property="og:image" content="https://jackbrownendurance.github.io/race-day-planner/slide1.png">
+    <meta property="og:url" content="https://jackbrownendurance.github.io/race-day-planner">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,21 +28,27 @@
             <div class="input-row">
                 <input type="time" id="raceTime">
                 <button onclick="generateTimeline()">Go</button>
+                <button class="reset-btn" onclick="resetTimeline()">↺</button>
             </div>
         </div>
 
         <!-- MY TIME column overlays -->
-        <div id="time-t4"  class="race-time"></div>
-        <div id="time-t3"  class="race-time"></div>
-        <div id="time-t1"  class="race-time"></div>
-        <div id="time-t45" class="race-time"></div>
-        <div id="time-t40" class="race-time"></div>
-        <div id="time-t30" class="race-time"></div>
-        <div id="time-t15" class="race-time"></div>
-        <div id="time-t10" class="race-time"></div>
-        <div id="time-t5"  class="race-time"></div>
-        <div id="time-t0"  class="race-time"></div>
+        <div id="time-t4"  class="race-time">--:--</div>
+        <div id="time-t3"  class="race-time">--:--</div>
+        <div id="time-t1"  class="race-time">--:--</div>
+        <div id="time-t45" class="race-time">--:--</div>
+        <div id="time-t40" class="race-time">--:--</div>
+        <div id="time-t30" class="race-time">--:--</div>
+        <div id="time-t15" class="race-time">--:--</div>
+        <div id="time-t10" class="race-time">--:--</div>
+        <div id="time-t5"  class="race-time">--:--</div>
+        <div id="time-t0"  class="race-time">--:--</div>
     </div>
+
+    <footer>
+        <a href="https://jackbrownendurance.com" target="_blank">jackbrownendurance.com</a>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
