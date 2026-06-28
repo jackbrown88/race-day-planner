@@ -3,10 +3,8 @@ const offsets = [-240, -180, -60, -45, -40, -30, -15, -10, -5, 0];
 
 function generateTimeline() {
     const raceTimeValue = document.getElementById("raceTime").value;
-    if (!raceTimeValue) {
-        alert("Please enter your race start time.");
-        return;
-    }
+    if (!raceTimeValue) return;
+
     const raceStart = new Date("2000-01-01T" + raceTimeValue);
 
     function timeAt(offsetMinutes) {
@@ -33,7 +31,7 @@ function resetTimeline() {
 function downloadTimeline() {
     const firstEl = document.getElementById("time-t4");
     if (firstEl.classList.contains("placeholder")) {
-        alert("Please enter your race start time and hit Go first.");
+        alert("Please enter your race start time first.");
         return;
     }
 
@@ -86,7 +84,7 @@ function shareTimeline() {
 document.addEventListener("DOMContentLoaded", function () {
     timeIds.forEach(id => document.getElementById(id).classList.add("placeholder"));
 
-    document.getElementById("raceTime").addEventListener("keydown", function (e) {
-        if (e.key === "Enter") generateTimeline();
+    document.getElementById("raceTime").addEventListener("change", function () {
+        generateTimeline();
     });
 });
