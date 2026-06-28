@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zwift Race Day Timeline | Jack Brown Endurance</title>
-
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
-
     <!-- Open Graph / social sharing -->
     <meta property="og:title" content="Zwift Race Day Timeline">
     <meta property="og:description" content="Enter your race start time and get your personalised countdown to peak performance.">
@@ -15,19 +13,16 @@
     <meta property="og:url" content="https://jackbrownendurance.github.io/zwift-race-day-planner">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
     <!-- html2canvas for screenshot -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
     <div class="planner" id="planner">
         <img src="slide1.png" id="background" alt="Zwift Race Day Timeline">
-
         <!-- Input UI -->
         <div class="calculator">
             <label for="raceTime">Enter your race start time</label>
@@ -35,10 +30,9 @@
                 <input type="time" id="raceTime">
                 <button onclick="generateTimeline()">Go</button>
                 <button class="reset-btn" onclick="resetTimeline()">↺</button>
+                <p class="instruction">Then download your timeline</p>
             </div>
-            <p class="instruction">Then download your timeline</p>
         </div>
-
         <!-- MY TIME column overlays -->
         <div id="time-t4"  class="race-time">--:--</div>
         <div id="time-t3"  class="race-time">--:--</div>
@@ -51,7 +45,6 @@
         <div id="time-t5"  class="race-time">--:--</div>
         <div id="time-t0"  class="race-time">--:--</div>
     </div>
-
     <!-- Below planner controls -->
     <div class="below-planner">
         <div class="action-buttons">
@@ -62,7 +55,6 @@
             <a href="https://jackbrownendurance.com" target="_blank">jackbrownendurance.com</a>
         </footer>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
