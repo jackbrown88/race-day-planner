@@ -52,6 +52,15 @@ label {
     gap: 6px;
 }
 
+.instruction {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(9px, 2.2vw, 12px);
+    color: #ffffff;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
 input[type="time"] {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(10px, 3vw, 15px);
