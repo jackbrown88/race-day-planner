@@ -125,16 +125,16 @@ button:active { background: #a8cc00; }
 }
 
 /* Row positions — precise Y coordinates from Canva (÷ 1350) */
-#time-t4  { top: 36.06%; left: 13.5%; }
-#time-t3  { top: 42.54%; left: 13.5%; }
-#time-t1  { top: 49.21%; left: 13.5%; }
-#time-t45 { top: 55.82%; left: 13.5%; }
-#time-t40 { top: 62.50%; left: 13.5%; }
-#time-t30 { top: 69.08%; left: 13.5%; }
-#time-t15 { top: 75.63%; left: 13.5%; }
-#time-t10 { top: 82.28%; left: 13.5%; }
-#time-t5  { top: 88.85%; left: 13.5%; }
-#time-t0  { top: 95.77%; left: 13.5%; }
+#time-t4  { top: 36.56%; left: 13.5%; }
+#time-t3  { top: 43.04%; left: 13.5%; }
+#time-t1  { top: 49.71%; left: 13.5%; }
+#time-t45 { top: 56.32%; left: 13.5%; }
+#time-t40 { top: 63.00%; left: 13.5%; }
+#time-t30 { top: 69.58%; left: 13.5%; }
+#time-t15 { top: 76.13%; left: 13.5%; }
+#time-t10 { top: 82.78%; left: 13.5%; }
+#time-t5  { top: 89.35%; left: 13.5%; }
+#time-t0  { top: 96.27%; left: 13.5%; }
 
 /* ── Below planner ── */
 .below-planner {
