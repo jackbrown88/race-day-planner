@@ -132,7 +132,7 @@ footer {
     text-align: center;
     padding: 12px;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(11px, 2.5vw, 16px);
+    font-size: clamp(12px, 3vw, 18px);
     letter-spacing: 1px;
 }
 
