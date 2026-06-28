@@ -20,9 +20,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- html2canvas for screenshot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
-    <div class="planner">
+    <div class="planner" id="planner">
         <img src="slide1.png" id="background" alt="Zwift Race Day Timeline">
 
         <!-- Input UI -->
@@ -48,9 +51,13 @@
         <div id="time-t0"  class="race-time">--:--</div>
     </div>
 
-    <footer>
-        <a href="https://jackbrownendurance.com" target="_blank">jackbrownendurance.com</a>
-    </footer>
+    <!-- Below planner controls -->
+    <div class="below-planner">
+        <button class="download-btn" onclick="downloadTimeline()">⬇ Download My Timeline</button>
+        <footer>
+            <a href="https://jackbrownendurance.com" target="_blank">jackbrownendurance.com</a>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
