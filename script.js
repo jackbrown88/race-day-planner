@@ -7,7 +7,6 @@ function generateTimeline() {
         alert("Please enter your race start time.");
         return;
     }
-
     const raceStart = new Date("2000-01-01T" + raceTimeValue);
 
     function timeAt(offsetMinutes) {
@@ -34,7 +33,7 @@ function resetTimeline() {
 function downloadTimeline() {
     const firstEl = document.getElementById("time-t4");
     if (firstEl.classList.contains("placeholder")) {
-        alert("Please enter your race start time first.");
+        alert("Please enter your race start time and hit Go first.");
         return;
     }
 
