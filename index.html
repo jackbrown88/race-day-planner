@@ -63,7 +63,11 @@
             <button class="share-btn" onclick="shareTimeline()">↗ Share</button>
         </div>
         <footer>
-            <a href="https://jackbrownendurance.com" target="_blank">jackbrownendurance.com</a>
+            <a href="https://jackbrownendurance.com"
+               target="_blank"
+               onclick="if(typeof gtag==='function'){gtag('event','website_click');}">
+                jackbrownendurance.com
+            </a>
         </footer>
     </div>
     <script src="script.js"></script>
